@@ -1,39 +1,24 @@
-basic.showLeds(`
-    # # # # .
-    # . . . .
-    # . # # #
-    # . . . #
-    # # # # #
-    `)
-basic.showNumber(500)
-basic.showLeds(`
-    # . . . #
-    # . . . #
-    # . . . #
-    # . . . #
-    . # # # .
-    `)
-basic.showLeds(`
-    . . # . .
-    . # . # .
-    # . . . #
-    # # # # #
-    # . . . #
-    `)
-basic.showNumber(500)
-basic.showLeds(`
-    # # # # .
-    # . . . #
-    # . . . #
-    # . . . #
-    # # # # .
-    `)
-basic.showNumber(500)
-basic.showLeds(`
-    . . # . .
-    . # . # .
-    # . . . #
-    # # # # #
-    # . . . #
-    `)
-basic.showNumber(500)
+basic.forever(function () {
+    basic.showLeds(`
+        . . # . .
+        . # . . .
+        # # # # #
+        . # . . .
+        . . # . .
+        `)
+    basic.pause(360)
+    basic.showLeds(`
+        . . # . .
+        . . . # .
+        # # # # #
+        . . . # .
+        . . # . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . . # . .
+        . # # # .
+        # . # . #
+        . . # . .
+        `)
+})
